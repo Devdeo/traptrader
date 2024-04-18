@@ -1,0 +1,239 @@
+[debug] [2024-04-18T04:04:08.295Z] ----------------------------------------------------------------------
+[debug] [2024-04-18T04:04:08.302Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dev\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-18T04:04:08.303Z] CLI Version:   13.7.2
+[debug] [2024-04-18T04:04:08.304Z] Platform:      win32
+[debug] [2024-04-18T04:04:08.305Z] Node Version:  v21.7.3
+[debug] [2024-04-18T04:04:08.305Z] Time:          Thu Apr 18 2024 09:34:08 GMT+0530 (India Standard Time)
+[debug] [2024-04-18T04:04:08.306Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-18T04:04:08.522Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-18T04:04:08.524Z] > authorizing via signed-in user (devcomputer124@gmail.com)
+[debug] [2024-04-18T04:04:08.524Z] [iam] checking project xpost-2c3c4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-18T04:04:08.530Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions [none]
+[debug] [2024-04-18T04:04:08.530Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions x-goog-quota-user=projects/xpost-2c3c4
+[debug] [2024-04-18T04:04:08.531Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-18T04:04:10.442Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions 200
+[debug] [2024-04-18T04:04:10.442Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-18T04:04:10.444Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/xpost-2c3c4 [none]
+[debug] [2024-04-18T04:04:11.133Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/xpost-2c3c4 200
+[debug] [2024-04-18T04:04:11.134Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/xpost-2c3c4 {"projectId":"xpost-2c3c4","projectNumber":"82427383413","displayName":"xpost","name":"projects/xpost-2c3c4","resources":{"hostingSite":"xpost-2c3c4","storageBucket":"xpost-2c3c4.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_346a0322-2da4-4b37-9ca6-7ddfa7eb8179"}
+[debug] [2024-04-18T04:04:24.102Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites pageToken=&pageSize=10
+[debug] [2024-04-18T04:04:25.767Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites 200
+[debug] [2024-04-18T04:04:25.767Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites {"sites":[{"name":"projects/xpost-2c3c4/sites/xpost-2c3c4","defaultUrl":"https://xpost-2c3c4.web.app","appId":"1:82427383413:web:8f04d51a440068c499323c","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-18T04:04:25.768Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:82427383413:web:8f04d51a440068c499323c/config [none]
+[debug] [2024-04-18T04:04:26.747Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:82427383413:web:8f04d51a440068c499323c/config 200
+[debug] [2024-04-18T04:04:26.747Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:82427383413:web:8f04d51a440068c499323c/config {"projectId":"xpost-2c3c4","appId":"1:82427383413:web:8f04d51a440068c499323c","storageBucket":"xpost-2c3c4.appspot.com","locationId":"us-central","apiKey":"AIzaSyDp5dbXIs5qg5aHfeUs-8xm4yj7kFe5voI","authDomain":"xpost-2c3c4.firebaseapp.com","messagingSenderId":"82427383413"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-18T04:04:51.451Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 [none]
+[debug] [2024-04-18T04:04:52.816Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 200
+[debug] [2024-04-18T04:04:52.817Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 {"name":"projects/xpost-2c3c4/sites/xpost-2c3c4","defaultUrl":"https://xpost-2c3c4.web.app","appId":"1:82427383413:web:8f04d51a440068c499323c","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.1
+
+[info]   - Environments: .env
+
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./pages/course.js
+102:10  Warning: React Hook useEffect has missing dependencies: 'fetchUserName' and 'router'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./pages/dashboard.js
+37:8  Warning: React Hook useEffect has missing dependencies: 'fetchUserName' and 'router'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./pages/login.js
+27:10  Warning: React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./pages/scrap.js
+38:8  Warning: React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+50:12  Warning: React Hook useEffect has missing dependencies: 'fetchUserName' and 'router'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./pages/signup.js
+36:8  Warning: React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/13) ...
+
+[info]    Generating static pages (3/13) 
+
+[info]    Generating static pages (6/13) 
+
+[info]    Generating static pages (9/13) 
+
+[info]  ✓ Generating static pages (13/13)
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] > Image Optimization using the default loader is not compatible with export.
+  Possible solutions:
+    - Use `next start` to run a server, which includes the Image Optimization API.
+    - Configure `images.unoptimized = true` in `next.config.js` to disable the Image Optimization API.
+  Read more: https://nextjs.org/docs/messages/export-image-api
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • Image Optimization
+[info]  • non-static route /api/hello
+[info]  • non-static route /api/razorpay
+[info] 
+[debug] [2024-04-18T04:06:14.164Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 [none]
+[debug] [2024-04-18T04:06:15.603Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 200
+[debug] [2024-04-18T04:06:15.603Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 {"name":"projects/xpost-2c3c4/sites/xpost-2c3c4","defaultUrl":"https://xpost-2c3c4.web.app","appId":"1:82427383413:web:8f04d51a440068c499323c","type":"DEFAULT_SITE"}
+[debug] [2024-04-18T04:06:16.155Z] Error: Source and destination must not be the same.
+    at C:\Users\Dev\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\util\stat.js:49:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-04-18T04:13:17.573Z] ----------------------------------------------------------------------
+[debug] [2024-04-18T04:13:17.581Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dev\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-18T04:13:17.582Z] CLI Version:   13.7.2
+[debug] [2024-04-18T04:13:17.583Z] Platform:      win32
+[debug] [2024-04-18T04:13:17.583Z] Node Version:  v21.7.3
+[debug] [2024-04-18T04:13:17.585Z] Time:          Thu Apr 18 2024 09:43:17 GMT+0530 (India Standard Time)
+[debug] [2024-04-18T04:13:17.586Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-18T04:13:17.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-18T04:13:17.817Z] > authorizing via signed-in user (devcomputer124@gmail.com)
+[debug] [2024-04-18T04:13:17.817Z] [iam] checking project xpost-2c3c4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-18T04:13:17.824Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions [none]
+[debug] [2024-04-18T04:13:17.825Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions x-goog-quota-user=projects/xpost-2c3c4
+[debug] [2024-04-18T04:13:17.825Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-18T04:13:19.928Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions 200
+[debug] [2024-04-18T04:13:19.929Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xpost-2c3c4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-18T04:13:19.931Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/xpost-2c3c4 [none]
+[debug] [2024-04-18T04:13:20.830Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/xpost-2c3c4 200
+[debug] [2024-04-18T04:13:20.831Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/xpost-2c3c4 {"projectId":"xpost-2c3c4","projectNumber":"82427383413","displayName":"xpost","name":"projects/xpost-2c3c4","resources":{"hostingSite":"xpost-2c3c4","storageBucket":"xpost-2c3c4.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_346a0322-2da4-4b37-9ca6-7ddfa7eb8179"}
+[debug] [2024-04-18T04:13:37.565Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites pageToken=&pageSize=10
+[debug] [2024-04-18T04:13:39.474Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites 200
+[debug] [2024-04-18T04:13:39.474Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites {"sites":[{"name":"projects/xpost-2c3c4/sites/xpost-2c3c4","defaultUrl":"https://xpost-2c3c4.web.app","appId":"1:82427383413:web:8f04d51a440068c499323c","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-18T04:13:39.476Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:82427383413:web:8f04d51a440068c499323c/config [none]
+[debug] [2024-04-18T04:13:42.115Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:82427383413:web:8f04d51a440068c499323c/config 200
+[debug] [2024-04-18T04:13:42.116Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:82427383413:web:8f04d51a440068c499323c/config {"projectId":"xpost-2c3c4","appId":"1:82427383413:web:8f04d51a440068c499323c","storageBucket":"xpost-2c3c4.appspot.com","locationId":"us-central","apiKey":"AIzaSyDp5dbXIs5qg5aHfeUs-8xm4yj7kFe5voI","authDomain":"xpost-2c3c4.firebaseapp.com","messagingSenderId":"82427383413"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-18T04:14:07.357Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 [none]
+[debug] [2024-04-18T04:14:09.227Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 200
+[debug] [2024-04-18T04:14:09.228Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 {"name":"projects/xpost-2c3c4/sites/xpost-2c3c4","defaultUrl":"https://xpost-2c3c4.web.app","appId":"1:82427383413:web:8f04d51a440068c499323c","type":"DEFAULT_SITE"}
+[info]  ⚠ Invalid next.config.js options detected: 
+
+[info]  ⚠     Unrecognized key(s) in object: 'useStrictMode'
+
+[info]  ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+
+[info]   ▲ Next.js 14.2.1
+
+[info]   - Environments: .env
+
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./pages/course.js
+102:10  Warning: React Hook useEffect has missing dependencies: 'fetchUserName' and 'router'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./pages/dashboard.js
+37:8  Warning: React Hook useEffect has missing dependencies: 'fetchUserName' and 'router'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./pages/login.js
+27:10  Warning: React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./pages/scrap.js
+38:8  Warning: React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+50:12  Warning: React Hook useEffect has missing dependencies: 'fetchUserName' and 'router'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./pages/signup.js
+36:8  Warning: React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/13) ...
+
+[info]    Generating static pages (3/13) 
+
+[info]    Generating static pages (6/13) 
+
+[info]    Generating static pages (9/13) 
+
+[info]  ✓ Generating static pages (13/13)
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (pages)                              Size     First Load JS
+┌ ○ /                                      1.4 kB          205 kB
+├   /_app                                  0 B             204 kB
+├ ○ /404                                   473 B           204 kB
+├ ○ /about                                 921 B           204 kB
+├ ƒ /api/hello                             0 B             204 kB
+├ ƒ /api/razorpay                          0 B             204 kB
+├ ○ /course                                1.62 kB         205 kB
+├ ○ /dashboard                             799 B           204 kB
+├ ○ /landing                               1.36 kB         205 kB
+├ ○ /lead                                  656 B           204 kB
+├ ○ /login                                 903 B           204 kB
+├ ○ /reset                                 519 B           204 kB
+├ ○ /scrap                                 1.48 kB         205 kB
+├ ○ /signup                                900 B           204 kB
+└ ○ /term                                  3.85 kB         207 kB
++ First Load JS shared by all              204 kB
+  ├ chunks/framework-2c16ac744b6cdea6.js   45.2 kB
+  ├ chunks/main-4335ea930a0c055b.js        32 kB
+  ├ chunks/pages/_app-3f0ef854494f5db1.js  125 kB
+  └ other shared chunks (total)            1.2 kB
+
+[info] 
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • Image Optimization
+[info]  • non-static route /api/hello
+[info]  • non-static route /api/razorpay
+[info] 
+[debug] [2024-04-18T04:15:33.148Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 [none]
+[debug] [2024-04-18T04:15:34.751Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 200
+[debug] [2024-04-18T04:15:34.752Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xpost-2c3c4/sites/xpost-2c3c4 {"name":"projects/xpost-2c3c4/sites/xpost-2c3c4","defaultUrl":"https://xpost-2c3c4.web.app","appId":"1:82427383413:web:8f04d51a440068c499323c","type":"DEFAULT_SITE"}
+[debug] [2024-04-18T04:15:35.420Z] Error: Source and destination must not be the same.
+    at C:\Users\Dev\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\util\stat.js:49:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.

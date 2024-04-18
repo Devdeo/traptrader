@@ -1,0 +1,31 @@
+{
+  "name": "devtraptrader",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@firebase/storage": "^0.12.4",
+    "@graphland/react-video-player": "^0.1.14",
+    "bulma": "^1.0.0",
+    "firebase": "^10.11.0",
+    "next": "14.2.1",
+    "next-cloudinary": "^6.5.0",
+    "next-video": "^1.0.0",
+    "razorpay": "^2.9.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-firebase-hooks": "^5.1.1",
+    "react-player": "^2.16.0",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.1"
+  }
+}
